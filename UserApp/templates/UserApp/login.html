@@ -1,0 +1,15 @@
+
+{% extends "TurismoApp/base.html" %}
+{% load static %}
+
+{% block title %} Login  {% endblock title %}
+{% block main %}
+<div class="d-flex justify-content-center">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Inciar sesion</button>
+    </form>
+{% endblock main %}   
+</body>
+</html>

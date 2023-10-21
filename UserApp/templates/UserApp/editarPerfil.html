@@ -1,0 +1,24 @@
+
+{% extends "TurismoApp/base.html" %}
+{% load static %}
+
+{% block title %} Formulario- Editar Perfil  {% endblock title %}
+{% block main %}
+<h1> Formulario- Editar Perfil </h1>
+<h1> De {{usuario}}</h1>
+
+<div class="d-flex justify-content-center">
+    <div class= "d-flex Flex-column">
+        <p class= "fs-s fw-bold"> {{msg_login}} <\p>
+
+    <form action= ""  method="post"> {% csrf_token %}
+        <table>
+            {{ miFormulario.as_table }}
+        </table>
+       
+        <input type = "submit" value="Actualizar">
+
+    </form>
+{% endblock main %}   
+</body>
+</html>

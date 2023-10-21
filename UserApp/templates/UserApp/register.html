@@ -1,0 +1,16 @@
+
+{% extends "TurismoApp/base.html" %}
+{% load static %}
+
+{% block title %} Register  {% endblock title %}
+{% block main%}
+<div class="d-flex justify-content-center">
+        <div class= "d-flex Flex-column">
+            <p class= "fs-s fw-bold"> {{msg_login}}
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Aceptar</button>
+    </form>
+    {%endblock main %}
+
